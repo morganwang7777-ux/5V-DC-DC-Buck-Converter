@@ -6,8 +6,6 @@
 
 Designed a non-synchronous DC-DC buck converter using the Analog Devices LT1375 to step a 10–15V DC input down to a regulated 5V output at up to 1A. I selected the electrical components, simulated and optimized the circuit in LTspice, and designed a two-layer SMD PCB in Altium Designer.
 
-**Project Status:** LTspice simulations, schematic design, PCB layout, and routing completed. The PCB has not been physically manufactured or tested.
-
 ## Design Specifications
 
 | Parameter | Value |
@@ -75,32 +73,21 @@ I designed a two-layer PCB with the following considerations:
 - **Component Placement:** Grouped the LT1375, input capacitor, Schottky diode, BOOST circuitry, and inductor to reduce switching-path lengths.
 - **Power Routing:** Used 25 mil target trace widths for major power connections and approximately 10 mil for low-current feedback and compensation signals.
 - **Ground Plane:** Created a Bottom Layer GND polygon pour and connected ground pads using short traces and vias.
-- **Feedback Routing:** Separated sensitive feedback connections from the switching node where possible.
-- **PCB Design:** Added input/output connectors, component designators, voltage labels, and a custom board outline.
-
-Completed schematic validation, PCB routing, and design-rule checks under the project's configured rules.
 
 ## 4. Project Files
 
 | Folder | Contents |
 |---|---|
-| [Altium](Altium/) | Altium schematic, PCB layout, project files, and supporting libraries |
-| [LTSpice](LTSpice/) | Reference, V1, and V2 LTspice simulations |
-| [Results](Results/) | Measurement logs, ripple comparison, BOM, and design-rule reports |
-| [Screenshots](Screenshots/) | Schematics, voltage waveforms, ripple graphs, PCB layouts, and 3D renderings |
-| [Documentation](Documentation/) | Engineering calculations and design documentation |
+| [Altium](Altium/) |
+| [LTSpice](LTSpice/) |
+| [Results](Results/) |
+| [Screenshots](Screenshots/) |
 
-## 5. Engineering Results & Limitations
+## 5. Engineering Results
 
 The optimized circuit achieved **23.639 mV peak-to-peak simulated output ripple**, demonstrating lower ripple than both the initial design and manufacturer's reference under the tested conditions.
-
-The PCB schematic and routing have been completed in Altium, but the physical components and board have not been tested.
-
-Additional validation is required to confirm the effective output capacitance, actual ESR, control-loop stability, component thermal performance, and PCB manufacturing clearances. In particular, the current DRC result was obtained under modified clearance rules, which require fabrication-specific review before manufacturing.
 
 ## 6. Future Improvements
 
 - Validate realistic capacitor and inductor characteristics across operating conditions.
-- Verify load-transient response and converter efficiency.
-- Review the PCB against manufacturer-supported fabrication rules.
 - Manufacture, assemble, and electrically test the PCB if the design proceeds to hardware implementation.
