@@ -1,9 +1,8 @@
 # 5V-DC-DC-Buck-Converter
 10–15V Input | 5V/1A Output | LTspice Simulation &amp; Altium PCB Design
 <img width="907" height="536" alt="Buck_Topview" src="https://github.com/user-attachments/assets/5a2a8996-0a52-416c-9b14-5e5af8264ecb" />
-# 5V DC-DC Buck Converter
 
-**LTspice Simulation & Altium PCB Design | Midnight Sun Solar Car Design Team**
+**LTspice Simulation & Altium PCB Design**
 
 Designed a non-synchronous DC-DC buck converter using the Analog Devices LT1375 to step a 10–15V DC input down to a regulated 5V output at up to 1A. I selected the electrical components, simulated and optimized the circuit in LTspice, and designed a two-layer SMD PCB in Altium Designer.
 
