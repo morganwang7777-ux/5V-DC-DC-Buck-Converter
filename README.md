@@ -104,5 +104,3 @@ Additional validation is required to confirm the effective output capacitance, a
 - Verify load-transient response and converter efficiency.
 - Review the PCB against manufacturer-supported fabrication rules.
 - Manufacture, assemble, and electrically test the PCB if the design proceeds to hardware implementation.
-
-This project helped me develop experience in power electronics, component selection, LTspice simulation, circuit optimization, and SMD PCB design using Altium Designer.
