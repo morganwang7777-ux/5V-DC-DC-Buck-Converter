@@ -1,0 +1,24 @@
+LTspice 26.1.1 for Windows
+Circuit: C:\Users\Abstr\projects\Buck Converter\buckv2.net
+Start Time: Sun Oct 11 16:50:17 2026
+solver = Normal
+Maximum thread count: 20
+tnom = 27
+temp = 27
+method = trap
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+Total elapsed time: 6.331 seconds.
+Total iterations: 2266918
+
+Files loaded:
+C:\Users\Abstr\projects\Buck Converter\buckv2.net
+C:\Users\Abstr\AppData\Local\LTspice\lib\cmp\standard.dio
+C:\Users\Abstr\AppData\Local\LTspice\lib\sub\LT1375.sub
+
+vavg: AVG(V(vout))=5.01524448424 FROM 0.008 TO 0.01
+vmax: MAX(V(vout))=5.02699804306 FROM 0.008 TO 0.01
+vmin: MIN(V(vout))=5.00335931778 FROM 0.008 TO 0.01
+ripple: VMAX-VMIN=0.0236387252808
